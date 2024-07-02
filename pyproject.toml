@@ -19,6 +19,9 @@ python = "^3.10"
 roseau-load-flow = ">=0.8.1"
 dss-python = ">=0.15.7"
 jupyter = "^1.0.0"
+# Pin numpy and rlfe because they are crashing Python
+roseau-load-flow-engine = "<0.14.0"
+numpy = "^1.26.0"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.0.0"
