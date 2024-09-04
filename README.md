@@ -27,7 +27,11 @@ using `pip`.
 1. Download all the files in this repository and unzip the folder on your device.
 2. Using the terminal, install all the requirements using the command `pip install -r requirements.txt`.
 
-## Tutorial 1
+## OpenDSS
+
+This directory is designed to help _OpenDSS_ users to use _Roseau Load Flow_.
+
+### Tutorial 1
 
 This tutorial involves modelling a simple LV network and is designed to familiarize the user with the basic workflow
 of _Roseau Load Flow (RLF)_. You will learn the following:
@@ -37,7 +41,7 @@ of _Roseau Load Flow (RLF)_. You will learn the following:
 2. How to build a network and run power flow simulations in _RLF_.
 3. How to access different types of results for various network elements
 
-## Tutorial 2
+### Tutorial 2
 
 This series of tutorials focuses on the modelling flexibility of _RLF_ as well as benchmarking _RLF_ with _OpenDSS_, a
 popular power flow solver. It will also demonstrate the interoperability of RLF with OpenDSS. In this tutorial, you
