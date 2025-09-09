@@ -67,6 +67,7 @@ repos:
     rev: v0.7.22
     hooks:
       - id: tombi-format
+      - id: tombi-lint
   - repo: https://github.com/kynan/nbstripout
     rev: 0.9.0
     hooks:
