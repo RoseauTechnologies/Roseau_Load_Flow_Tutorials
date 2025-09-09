@@ -37,12 +37,6 @@ repos:
     rev: v1.12.1
     hooks:
       - id: zizmor
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.12
-    hooks:
-      - id: ruff-check
-        args: [--fix]
-      - id: ruff-format
   - repo: https://github.com/executablebooks/mdformat
     rev: 0.7.22
     hooks:
