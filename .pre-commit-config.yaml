@@ -11,34 +11,34 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.8.20
+    rev: 0.9.26
     hooks:
       - id: uv-lock
       - id: uv-export
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.13.1
+    rev: v0.14.13
     hooks:
       - id: ruff-check
         args: [--fix]
       - id: ruff-format
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.34.0
+    rev: 0.36.0
     hooks:
       - id: check-github-workflows
       - id: check-dependabot
       - id: check-readthedocs
   - repo: https://github.com/adhtruong/mirrors-typos
     # Cf: https://github.com/crate-ci/typos/issues/390
-    rev: v1.36.2
+    rev: v1.42.1
     hooks:
       - id: typos
         args: [--force-exclude]
   - repo: https://github.com/woodruffw/zizmor-pre-commit
-    rev: v1.13.0
+    rev: v1.22.0
     hooks:
       - id: zizmor
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.22
+    rev: 1.0.0
     hooks:
       - id: mdformat
         additional_dependencies:
@@ -51,23 +51,23 @@ repos:
           - mdformat-deflist
         exclude: ^.github/.*\.md$
   - repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.6.2
+    rev: v3.8.1
     hooks:
       - id: prettier
         args: ["--print-width", "120"]
         require_serial: true
         types_or: [yaml]
   - repo: https://github.com/biomejs/pre-commit
-    rev: v2.2.4
+    rev: v2.3.11
     hooks:
       - id: biome-check
         types_or: [json, html, css]
         files: ".*" # Override default files regex that excludes html, rely on `types_or` instead
   - repo: https://github.com/tombi-toml/tombi-pre-commit
-    rev: v0.6.12
+    rev: v0.7.22
     hooks:
       - id: tombi-format
   - repo: https://github.com/kynan/nbstripout
-    rev: 0.8.1
+    rev: 0.9.0
     hooks:
       - id: nbstripout

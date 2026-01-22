@@ -2,8 +2,8 @@
 name = "roseau-load-flow-tutorials"
 version = "0.1.0"
 description = "Tutorials for Roseau Load Flow inspired from different software"
-requires-python = ">=3.11"
-license.text = "BSD-3-Clause"
+requires-python = ">=3.12"
+license = "MIT"
 authors = [
   { name = "Ali Hamdan", email = "ali.hamdan@roseautechnologies.com" },
   { name = "Benoît Vinot", email = "benoit.vinot@roseautechnologies.com" },
@@ -17,7 +17,7 @@ dependencies = [
   "dss-python>=0.15.7",
   "jupyter>=1.0.0",
   "rich>=13.8.0",
-  "roseau-load-flow>=0.13.1",
+  "roseau-load-flow>=0.14.0",
 ]
 
 # MD format
