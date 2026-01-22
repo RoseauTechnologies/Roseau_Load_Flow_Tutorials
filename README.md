@@ -15,11 +15,11 @@ To follow the tutorials, you will need the following:
 
 1. Clone this repository to your local machine
    ```sh
-   git clone https://github.com/RoseauTechnologies/Roseau_Load_Flow
+   git clone https://github.com/RoseauTechnologies/Roseau_Load_Flow_Tutorials
    ```
 2. Move to the tutorials directory
    ```sh
-   cd Roseau_Load_Flow/tutorials
+   cd Roseau_Load_Flow_Tutorials
    ```
 3. Install the required packages. It is highly recommended to use
    [uv](https://docs.astral.sh/uv/getting-started/installation/)
@@ -29,6 +29,7 @@ To follow the tutorials, you will need the following:
    If for any reason you are unable to use `uv`, you can install the required packages using `pip`. In this case you
    have to create a virtual environment and activate it manually:
    ```sh
+   # ONLY IF YOU ARE NOT USING uv
    # Create a virtual environment
    python -m venv .venv
    # Activate the virtual environment
