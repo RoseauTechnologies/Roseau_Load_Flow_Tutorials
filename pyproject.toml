@@ -2,7 +2,7 @@
 name = "roseau-load-flow-tutorials"
 version = "0.1.0"
 description = "Tutorials for Roseau Load Flow inspired from different software"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 license = "MIT"
 authors = [
   { name = "Roseau Technologies", email = "contact@roseautechnologies.com" },
