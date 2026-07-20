@@ -11,64 +11,55 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.9.26
+    rev: 0.11.29
     hooks:
       - id: uv-lock
       - id: uv-export
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.13
+    rev: v0.15.22
     hooks:
       - id: ruff-check
         args: [--fix]
       - id: ruff-format
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.36.0
+    rev: 0.37.4
     hooks:
       - id: check-github-workflows
       - id: check-dependabot
       - id: check-readthedocs
   - repo: https://github.com/adhtruong/mirrors-typos
     # Cf: https://github.com/crate-ci/typos/issues/390
-    rev: v1.42.1
+    rev: v1.48.0
     hooks:
       - id: typos
         args: [--force-exclude]
   - repo: https://github.com/woodruffw/zizmor-pre-commit
-    rev: v1.22.0
+    rev: v1.27.0
     hooks:
       - id: zizmor
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 1.0.0
+  - repo: https://github.com/rvben/rumdl-pre-commit
+    rev: v0.2.34
     hooks:
-      - id: mdformat
-        additional_dependencies:
-          - mdformat-pyproject
-          - mdformat-myst
-          - mdformat-gfm
-          - mdformat-gfm-alerts
-          - mdformat-ruff
-          - mdformat-config
-          - mdformat-deflist
-        exclude: ^.github/.*\.md$
+      - id: rumdl
   - repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.8.1
+    rev: v3.9.5
     hooks:
       - id: prettier
         args: ["--print-width", "120"]
         require_serial: true
         types_or: [yaml]
   - repo: https://github.com/biomejs/pre-commit
-    rev: v2.3.11
+    rev: v2.5.4
     hooks:
       - id: biome-check
         types_or: [json, html, css]
         files: ".*" # Override default files regex that excludes html, rely on `types_or` instead
   - repo: https://github.com/tombi-toml/tombi-pre-commit
-    rev: v0.7.22
+    rev: v1.2.4
     hooks:
       - id: tombi-format
       - id: tombi-lint
   - repo: https://github.com/kynan/nbstripout
-    rev: 0.9.0
+    rev: 0.9.1
     hooks:
       - id: nbstripout
