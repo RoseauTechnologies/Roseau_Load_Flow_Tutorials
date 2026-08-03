@@ -14,20 +14,27 @@ intricacies of the _Roseau Load Flow_ solver.
 To follow the tutorials, you will need the following:
 
 1. Clone this repository to your local machine
+
    ```sh
    git clone https://github.com/RoseauTechnologies/Roseau_Load_Flow_Tutorials
    ```
+
 2. Move to the tutorials directory
+
    ```sh
    cd Roseau_Load_Flow_Tutorials
    ```
+
 3. Install the required packages. It is highly recommended to use
    [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
    ```sh
    uv sync
    ```
+
    If for any reason you are unable to use `uv`, you can install the required packages using `pip`. In this case you
    have to create a virtual environment and activate it manually:
+
    ```sh
    # ONLY IF YOU ARE NOT USING uv
    # Create a virtual environment
@@ -37,6 +44,7 @@ To follow the tutorials, you will need the following:
    # Install the required packages
    python -m pip install -r requirements.txt
    ```
+
 4. Open the project in your favorite IDE or in Jupyter Notebook and get started.
 
 ## OpenDSS
